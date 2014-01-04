@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XS App</string>
+    <string name="admin_title">XS App</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Common text -->
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_reset">Clear</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_setting">Setting</string>
+    
+    <string name="server_url">Server address (*)</string>
+	<string name="server_pass">Password (*)</string>
+	
+	<string name="no_network">There is no network connection. Please click setting button to set up your network.</string>
+    <string name="processing">Processing&#8230;</string>
+     
+	<!-- Menu text -->
+    <string name="user_help">About us</string><string name="admin_authen">Admin control</string>
+    <string name="admin_configuration">Server Configuration</string>
+    <string name="admin_language">Language</string>
+    <string name="admin_widget">Power widget</string>
+    <string name="admin_logout">Logout</string>
+    <string name="admin_exit">Exit application</string>
+    
+    <!-- Register screen -->
+	<string name="register_description">Please fill the server information to finish setup.\nExample: http://rtanalytics.vn</string>
+	<string name="server_info_invalid">Server address and password are required.</string>
+	<string name="server_info_incorrect">Server address or password is incorrect.</string>
+	
+	<!-- Admin control screen -->
+	<string name="admin_control_description">If you are not administrator, please leave this form.</string>
+	<string name="password_incorrect">Administrator password is incorrect.</string>
+	<string name="admin_configuration_description">Please fill the server information.\nExample: http://rtanalytics.vn</string>
+	<string name="admin_configuration_success">You have registered successfully.</string>
+	<string name="admin_configuration_fail">Register server fail, please check the server or password address.</string>
+	<string name="admin_configuration_GCM_fail">Android Push Notification service is not available right now, please try again later.</string>
+	<string name="admin_logout_confirm">Are you sure you want logout admin account?</string>
+	<string name="admin_exit_confirm">Are you sure you want exit application?</string>
+	
+</resources>

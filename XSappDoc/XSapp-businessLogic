@@ -1,0 +1,144 @@
+Một số kiến thức cơ bản:
+1. Bóng 1 số
+Bóng của 1 là 6
+Bóng của 2 là 7
+Bóng của 3 là 8
+Bóng của 4 là 9
+Bóng của 5 là 0
+2. Vòng lặp âm dương ngũ hành:
+Kim = 2 Mộc = 5 Hỏa = 3 Thủy =1 Thổ = 4
+Như vậy, chiếu theo bóng ta có : Kim=7 Mộc=0 Hỏa=8 Thủy=6 Thổ=9
+Kim -> Mộc -> Hỏa -> Thủy -> Thổ -> Kim
+tức là : 2->5->3->1->4->2 và 7->0->6->9->7
+3. 2 số cuối của giải đặc biệt:
+VD: giải đặc biệt là 09868 -> 2 số cuối là 68
+4. Tổng của giải đặc biệt :
+Vn: giải đặc biệt là 12536 -> tổng = 1+2+5+3+6 = 17
+Các cách soi cầu lô đề thông dụng:
+CÁCH SOI CẦU 1 (theo luật pascal)
+Lấy 5 số giải ĐB và 5 số giải nhất ngày hôm trước để tính cặp số ngày hôm sau. VD: giải DB là 12345; giải nhất là 45678, ghép lại ta có số 1234545678. Cộng theo luật pascal nghĩa là 2 số liên tiếp cộng với nhau (nếu tổng > 10 thì chỉ lấy hàng đơn vị) ta sẽ được dãy số mới có chiều dài nhỏ hơn 1 đơn vị. Lặp lại quá trình này đến khi được cặp số cuối cùng.
+Ở VD trên ta lấy: 1 + 2 =3; 2 + 3 = 5; 3 + 4 =7... ta sẽ có cặp mới: 357999135.
+Các bước tính cầu theo quy luật pascal
+1234545678
+357999135
+82688048
+0846842
+82046
+0240
+264
+80
+
+80 là kết quả cần tìm
+CÁCH SOI CẦU 2
+Căn cứ vào kết quả xổ số của những ngày trước ở cùng 1 vị trí của giải, ta chọn ra 1 cặp số dự đoán cho hôm sau, cầu ổn định khi chạy sẽ đúng từ 4 ngày trở lên.
+Ví dụ:
+Căn cứ kết quả XSMB ngày 01/01
+46316
+21028
+Dự đoán 68-86, kết quả ngày 02/01 có 68
+Vậy theo cầu này ta chọn tiếp ở cùng vị trí của kết quả ngày 02/01 để dự đoán cho ngày 03/01 07012
+81525
+Dự đoán cặp số 25-52
+CÁCH SOI CẦU 3
+SOI CẦU ĐỀ
+Ta xét kết quả trong 2 hôm để đánh hôm thứ 3.
+Giả sử ngày Đầu ( ngày thứ nhất) có 2 số cuối là 58 -> ta suy ra ngày thứ 3 sẽ có 36 ( vì 5->3 ; 6 )
+VD cụ thể hơn : hôm nay Đề về 32 -> ngày kia sẽ có lô 15 ( vì 3->1 ; 2->5)
+Tuy nhiên, cách tính này chỉ tương đối chính xác với các giải đặc biệt ngày thứ Nhất có tổng từ 20 -> 30.
+Để tiện cho việc trình bày, tôi sẽ đưa ra một số quy định: gọi Đề ngày 1 = MN
+Đề ngày 2 = CD
+Lô ngày 3 (dự đoán được) = AB
+trong cùng một số thì A, B là khác nhau. Nhưng ở 2 ngày khác nhau thì có thể giống nhau
+vd : MN = 35 ( 3#5) CD = 39 ( 3#9, C=M) , xin nhớ ở đây là CD chưa có quan hệ gì với nhau.
+Sau đây ta sẽ đi vào từng ngày cụ thể:
+1. Tổng giải đặc biệt = 20 ; 25
+Ngày 1 có Đề = MN -> Lô ngày 3 = AB. Đánh BA
+2. Tổng đb= số chẵn ( 22, 24, 26, 28)
+ngày 1 đề= MN -> dự đoán Lô ngày 3= AB
+lấy 10-B= I , giữ nguyên A. Đánh AI
+3. Tổng = số lẻ và 30 (21, 23, 29, 30)
+ngày 1 để = MN -> dự đoán Lô ngày 3 = AB. Đánh AB
+Một số trường hợp đặc biệt :
+1. Đề ngày 1 = MN -> lô ngày 3 là AB. Đề ngày 2 là CD. Mà MN -> CD ( MN suy ra CD tương tự như MN-> AB)
+tức là ở đây AB=CD ( kết quả ngày 2 = với lô dự tính ngày 3)
+Đánh BA
+2. Đề ngày 1 -> lô ngày 3 là AB. Tổng ngày 2 = xy -> AB
+Đánh BA
+vd: đề ngày 1 = 35 -> lô ngày 3 = 13. Nhưng tổng ngày 2 cũng = 35 -> 13 => ngày 3 đánh lô 31
+3. Đề ngày 1 = MN -> lô dự đoán ngày 3 = AB. Đề ngày 2= CD. Mà C= M+x, D=N+x ( x là số âm hoặc dương)
+Đánh BA
+4. Một cách tìm khác có áp dụng phương pháp này :
+Nếu kết quả ngày 1 có CD 2 nháy, CE 1 nháy, với E là bóng của D => lô ngày thứ 3 có thể được suy ra từ CE.
+VD: ngày 1 có lô 35 là 2 nháy, lô 30 có một phát -> lô ngày thứ 3 = 18 ( vì 3->1 ; 0->8)
+Đặc biệt : nếu ngày 1 có 2 con thỏa mãn điều kiện như vậy -> lô ngày 3 dự đoán được 2 con. Xếp con thấp trong 2 con đó lên trước ( vd HI , TU vì HI< TU) , lấy đầu 2 con đó ghép vào nhau ( được HT) => Đánh HT
+III. Một số trường hợp không thỏa mãn (tức là không nên đánh khi có các điều kiện sau xảy ra)
+1. Nếu dự đoán đc Lô ngày 3 là AB. Đề ngày 2 về CD -> AB, BA ( hoặc bóng của AB, BA)
+<=> Đề ngày 1 và 2 là bóng của nhau. Không nên đánh.
+VD: Đề ngày 1 là 37 -> Lô ngày 3 là 10. Nhưng Đề ngày 2 về 28 -> 56 (bóng là 01) => Không Đánh
+2. Nếu dự đoán đc Lô ngày 3 là AB. Tổng Đặc biệt ngày 2= AB hay BA ( hoặc bóng AB, BA). Không nên đánh.
+3. Nếu dự đoán đc Lô ngày 3 là AB. Nhưng Đề ngày 2 = AB hay BA (hoặc bóng AB, BA). Không nên đánh.
+4. Tổng Đặc biệt = 27 => Không nên đánh.
+5. Từ kết quả ngày 1 -> Lô ngày 3 là AB. Từ kết quả ngày 2 -> Lô ngày 4 là AB, BA (hoặc bóng AB, BA). Không nên đánh.
+SOI CẦU LÔ
+Cầu 1: Giải đặc biệt
+ví dụ ngày 16/08/2007 là 82714
+thì lô ngày 17/08/2007 sẽ là các cặp số sau
+282-272-171(tương ứng với các số liên tiếp gần nhau) đôi khi có cả cầu bệt là 141
+Cầu 2: cầunày tổng hợp luôn cả 2 cầu là cầu ngày chính số và cầu kế tiếp của cầungày!ví dụ hôm nay là ngày 17 thì cầu kế sẽ là ngày 18)
+Cầu ngày:1 tháng có từ 28 đến 31 ngày
+cầu tương ứng sẽ là từ ngày mùng 1 là 01-10——->02-20 cuối cùng của tháng sẽ là 31-13
+cầu kế:cầu kế sẽ tính là trước 1 ngày ví dụ
+cầu ngày hôm nay là 171 thì cầu kế sẽ là 181
+Cầu 3: cầu kẹp số,cầu trên dưới gộp lại
+Dùng cho tất cả các số kẹp ở các giải. Có nhiều kiểu kẹp số
+Ví dụ:Kết quả ngày 16/08/2007
+Giải đặc biệt
+82714
+Giải nhất
+35922
+Giải nhì
+32023 76374
+Giải ba
+58408 55868 92950 68006 59803 97127
+Giải tư
+5573 6589 5758 7315
+Giải năm
+5347 3947 7237 6285 3502 1949
+Giải sáu
+823 037 733
+Giải bẩy
+16 99 71 12
+1.con thứ 2 của giải thứ 2 của giải 4 và con cuối cùng của giải thứ 4 là con kép 55
+2.con cuối cùng của giải 6 và con đầu tiên của giải 7 là con 131
+3. con thứ 3 của giải thứ 2 của giải 6 và con thứ 2 của giải thứ 3 của giải 7 là con 171
+4. con cuối cùng của giải 6 và con cuối cùng của giải 7 là con 232
+Cầu 4:được tính theo bóng
+bóng số của lô tô có 2 loại
+1.Bóng Dương:0-5.1-6.2-7.3-8.4-9(và ngược lại)
+2.Bóng Âm: 0-7.1-4.2-9.3-6.5-8(và ngược lại)
+ví dụ giải đặc biệt của ngày 16/08/2007 là :82714
+Tính với 2 số đề bóng dương:1 đi 6,4 đi 9 số bóng tương ứng sẽ bằng số tổng của số thực:14 tổng 5 đi với bóng dương 69 cũng là tổng 5
+Tính với số đề sẽ bóng âm:1 đi 4.4 đi 1 số bóng tương ứng cũng chính bằng số tổng của số thực 14 tổng 5 đi với bóng dương 41 cũng là tổng 5
+Cầu lô số 5:
+Cầu lô số 5 là cầu lô chỉ áp dụng với các giải có từ 4 số trở lên(tất nhiên chỉ có 5 số là hết)
+ví dụ:KQSX ngày 17/08/2007
+Giải đặc biệt
+25511
+Giải nhất
+92170
+Giải nhì
+27056 92733
+Giải ba
+05209 28223 20075 37457 89718 21622
+Giải tư
+0562 0195 2605 3417
+Giải năm
+0827 7395 2368 5657 2565 2627
+Giải sáu
+793 059 313 Giải bẩy
+89 28 95 90
+như vậy trong các số kẹp giữa chính là cầu lô của các cặp số tương ứng sẽ là :252-282-454-161
+Tuy nhiên cầu này kô thường xuyên,theo duy ý của tôi thì nhưng cặp lô nằm trong các số là 0 và 8 là khả năng ra có thể nói là đều hơn
+vì dụ ngày hôm nay cặp 252 trùng với cầu giải Đặc biệt,đồng thời nằm giữa 2 con số 0, như vậy nó dc coi là chuẩn xác hơn cả!nhưng cũng kô loại trừ tìm được các cầu chập của 282-454 và 161 nếu thấy trùng cầu với các bro thì các bro cứ phang
+Trên đây là 5 cầu lô dễ tính, để cho anh em tham khảo,ngoài ra con 1 số cầu nữa,dần dần sẽ đưa hết lên để anh em tham khảo cho vui! còn về số má cầu cáp thì có thể ra có thể kô,vì theo xác xuất kô có cầu nào đi được đến quá 25 ngày, mà cũng kô có cầu nào tắt quá 25,đều là do xác xuất tỷ lệ quyết định,nói như vậy để anh em thấy rằng đã theo nghiệp số má thì phải xác định trước là rất gian khổ,nếu có thời gian đầu tư nghiên cứu sẽ kô thua,nhưng được cũng nhiều…
+Những cầu phức tạp là những cầu đòi hỏi thời gian nghiên cứu và theo dõi bảng kết quả lâu ngày mới tạo ra được những cặp số.
