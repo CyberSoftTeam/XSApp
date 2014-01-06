@@ -25,8 +25,8 @@ public class Constants {
 	public static final String FAIL = "FAIL";
 	public static final String UTF8 = "UTF-8";
 	
-	public static final String DISPLAY_MESSAGE_ACTION = "vn.rtanalytics.fa.DISPLAY_MESSAGE";
-	public static final String INTERNAL_MESSAGE_ACTION = "vn.rtanalytics.fa.INTERNAL_MESSAGE";
+	public static final String DISPLAY_MESSAGE_ACTION = "cyber.app.xsapp.DISPLAY_MESSAGE";
+	public static final String INTERNAL_MESSAGE_ACTION = "cyber.app.xsapp.INTERNAL_MESSAGE";
 	public static final String EXTRA_MESSAGE = "message";
 	public static final String DETECT_MESSAGE = "DETECT_MESSAGE";
 	public static final String PUSH_MESSAGE = "price";
