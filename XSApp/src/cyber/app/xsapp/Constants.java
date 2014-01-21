@@ -1,5 +1,11 @@
 package cyber.app.xsapp;
 
+import java.io.File;
+
+import android.app.Application;
+import android.content.pm.PackageManager;
+import android.os.Environment;
+
 
 public class Constants {
 	public static final String TAG = "android";
@@ -30,4 +36,7 @@ public class Constants {
 	public static final String EXTRA_MESSAGE = "message";
 	public static final String DETECT_MESSAGE = "DETECT_MESSAGE";
 	public static final String PUSH_MESSAGE = "price";
+	
+	public static final String DEFAULT_PACKAGE = "cyber.app.xsapp";
+	
 }

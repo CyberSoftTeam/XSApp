@@ -4,7 +4,7 @@
     <string name="app_name">XS App</string>
     <string name="admin_title">XS App</string>
     <string name="action_settings">Settings</string>
-    
+
     <!-- Common text -->
     <string name="btn_ok">OK</string>
     <string name="btn_cancel">Huỷ</string>
@@ -12,42 +12,44 @@
     <string name="btn_save">Lưu</string>
     <string name="btn_login">Đăng nhập</string>
     <string name="btn_setting">Thiết lập</string>
-    
     <string name="server_url">Địa chỉ server (*)</string>
-	<string name="server_pass">Mật khẩu (*)</string>
-	
-	<string name="no_network">Không có kết nối mạng. Hãy nhấn nút thiết lập để cài đặt kết nối mạng.</string>
+    <string name="server_pass">Mật khẩu (*)</string>
+    <string name="no_network">Không có kết nối mạng. Hãy nhấn nút thiết lập để cài đặt kết nối mạng.</string>
     <string name="processing">Đang xử lý&#8230;</string>
-	
-	<!-- Menu text -->
-    <string name="user_help">Trợ giúp</string><string name="admin_authen">Quản trị</string>
+
+    <!-- Menu text -->
+    <string name="user_help">Trợ giúp</string>
+    <string name="admin_authen">Quản trị</string>
     <string name="admin_configuration">Cấu hình máy chủ</string>
     <string name="admin_language">Ngôn ngữ</string>
     <string name="admin_logout">Thoát quyền quản trị</string>
     <string name="admin_exit">Thoát ứng dụng</string>
-    
+
     <!-- Register screen -->
-	<string name="register_description">Hãy điền thông tin về server để hoàn tất cài đặt.\nVí dụ: http://rtanalytics.vn</string>
-	<string name="server_info_invalid">Địa chỉ server là bắt buộc.</string>
-	<string name="server_info_incorrect">Địa chỉ server hoặc mật khẩu là không chính xác.</string>
-	
-	<!-- Admin control screen -->
-	<string name="admin_control_description">Nếu bạn không phải là quản trị viên, xin vui lòng rời đi.</string>
-	<string name="password_incorrect">Mật khẩu không chính xác.</string>
-	<string name="admin_configuration_description">Xin vui lòng nhập thông tin server.\nVí dụ: http://rtanalytics.vn</string>
-	<string name="admin_configuration_success">Bạn đã đăng ký thành công.</string>
-	<string name="admin_configuration_fail">Đăng ký thất bại, Bạn hãy kiểm tra lại thông tin server hoặc mật khẩu.</string>
-	<string name="admin_configuration_GCM_fail">Dịch vụ Android Push Notification bây giờ không hoạt động, vui lòng thử lại sau.</string>
-	<string name="admin_logout_confirm">Bạn muốn thoát khỏi quyền quản trị chứ?</string>
-	<string name="admin_exit_confirm">Bạn muốn thoát khỏi ứng dụng chứ?</string>
-	
-	<string-array name="language">
+    <string name="register_description">Hãy điền thông tin về server để hoàn tất cài đặt.\nVí dụ: http://rtanalytics.vn</string>
+    <string name="server_info_invalid">Địa chỉ server là bắt buộc.</string>
+    <string name="server_info_incorrect">Địa chỉ server hoặc mật khẩu là không chính xác.</string>
+
+    <!-- Admin control screen -->
+    <string name="admin_control_description">Nếu bạn không phải là quản trị viên, xin vui lòng rời đi.</string>
+    <string name="password_incorrect">Mật khẩu không chính xác.</string>
+    <string name="admin_configuration_description">Xin vui lòng nhập thông tin server.\nVí dụ: http://rtanalytics.vn</string>
+    <string name="admin_configuration_success">Bạn đã đăng ký thành công.</string>
+    <string name="admin_configuration_fail">Đăng ký thất bại, Bạn hãy kiểm tra lại thông tin server hoặc mật khẩu.</string>
+    <string name="admin_configuration_GCM_fail">Dịch vụ Android Push Notification bây giờ không hoạt động, vui lòng thử lại sau.</string>
+    <string name="admin_logout_confirm">Bạn muốn thoát khỏi quyền quản trị chứ?</string>
+    <string name="admin_exit_confirm">Bạn muốn thoát khỏi ứng dụng chứ?</string>
+
+    <string-array name="language">
         <item>Tiếng việt</item>
         <item>English</item>
     </string-array>
-    
-	<string-array name="language_vals">
+    <string-array name="language_vals">
         <item>vi</item>
         <item>en</item>
     </string-array>
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="hello_world">Hello world!</string>
+
 </resources>

@@ -14,10 +14,13 @@
         android:layout_height="wrap_content"
         android:text="@string/admin_title" />
 
-    <Button 
+    <Button
         android:id="@+id/btnGet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_ok"/>
+        android:layout_alignLeft="@+id/result"
+        android:layout_below="@+id/result"
+        android:layout_marginLeft="18dp"
+        android:text="@string/btn_ok" />
     
 </RelativeLayout>
